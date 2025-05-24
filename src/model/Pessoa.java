@@ -27,6 +27,6 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Nome: " + nome + "Cpf" + cpf;
+		return String.format("Nome: %s CPF: %s", nome, cpf);
 	}
 }
