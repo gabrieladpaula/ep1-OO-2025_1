@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Aluno extends Pessoa {
     private String matricula;
-    private List<String> disciplinasMatriculadas = new ArrayList<>();
+    private List<Disciplina> disciplinasMatriculadas = new ArrayList<>();
     
     public Aluno(String nome, String cpf, String matricula) {
         super(nome, cpf);
@@ -20,21 +20,25 @@ public class Aluno extends Pessoa {
         this.matricula = matricula;
     }
     
-    public void adicionarDisciplina(String disciplina) {
+    public void adicionarDisciplina(Disciplina disciplina) {
         disciplinasMatriculadas.add(disciplina);
     }
 
-    public void removerDisciplinas(String disciplina) {
+    public void removerDisciplinas(Disciplina disciplina) {
         disciplinasMatriculadas.remove(disciplina);
     }
 
-    public List<String> getDisciplinasMatriculadas() {
+    public List<Disciplina> getDisciplinasMatriculadas() {
         return disciplinasMatriculadas;
     }
 
-    public boolean matricularDisciplina(String disciplina) {
-        adicionarDisciplina(disciplina);
-        return true;
+    public boolean matricularDisciplina(Disciplina disciplina) {
+    	if (!disciplinasMatriculadas.contains(disciplina)) {
+    		disciplinasMatriculadas.add(disciplina);
+    		return true;
+    	}
+    	return false;
+        
     }
 
     @Override
