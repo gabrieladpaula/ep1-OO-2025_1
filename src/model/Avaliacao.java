@@ -1,6 +1,7 @@
 package model;
 
 public class Avaliacao {
+<<<<<<< HEAD
 	private String tipo;
 	private double nota;
 	private String descricao;
@@ -38,4 +39,7 @@ public class Avaliacao {
 	public String toString() {
 		return String.format("Avaliação: %s |  Nota: %.2f | Descrição: %s", tipo, nota, descricao);
 	}
+=======
+
+>>>>>>> e38209330ede1e47b811d37231029e8ebd0163fa
 }

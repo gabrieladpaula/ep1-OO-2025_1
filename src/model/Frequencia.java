@@ -1,5 +1,6 @@
 package model;
 
+<<<<<<< HEAD
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
@@ -36,5 +37,8 @@ public class Frequencia {
 	public String toString() {
 		return "Frequências registradas: " + datasPresenca;
 	}
+=======
+public class Frequencia {
+>>>>>>> e38209330ede1e47b811d37231029e8ebd0163fa
 
 }

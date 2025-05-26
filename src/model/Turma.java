@@ -1,5 +1,6 @@
 package model;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,4 +56,8 @@ String sala, String professor) {
 		return String.format("Turma de %s  Semestre: %s  Sala: %s  Professor: %s",
 				disciplina.getNome(), semestre, sala, professor);
 	}
+=======
+public class Turma {
+
+>>>>>>> e38209330ede1e47b811d37231029e8ebd0163fa
 }

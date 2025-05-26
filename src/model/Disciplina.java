@@ -1,6 +1,7 @@
 package model;
 
 public class Disciplina {
+<<<<<<< HEAD
 	private String nome;
 	private String codigo;
 	private int cargaHoraria;
@@ -37,5 +38,7 @@ int cargaHoraria) {
 	public String toString() {
 		return String.format("Disciplina: %s | Código: %s | Carga Horaria: %d horas)", nome, codigo, cargaHoraria);
 	}
+=======
+>>>>>>> e38209330ede1e47b811d37231029e8ebd0163fa
 
 }
